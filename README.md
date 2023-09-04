@@ -4,6 +4,8 @@
 
 - [GraphQL](https://graphql.org/)
 - [Apollo Client](https://www.apollographql.com/docs/apollo-client/)
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
 
 ## References
 
