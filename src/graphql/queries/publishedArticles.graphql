@@ -1,0 +1,8 @@
+query publishedArticles {
+  publishedArticles {
+    id
+    title
+    body
+    published
+  }
+}
