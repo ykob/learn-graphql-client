@@ -6,7 +6,11 @@ const config: CodegenConfig = {
   documents: "./src/**/*.graphql",
   generates: {
     "src/graphql/generated.ts": {
-      plugins: ["typescript", "typescript-operations"],
+      plugins: [
+        "typescript",
+        "typescript-operations",
+        "typescript-react-apollo",
+      ],
     },
   },
 };
