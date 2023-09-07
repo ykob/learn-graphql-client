@@ -20,9 +20,9 @@ export type Scalars = {
 export type Article = {
   __typename?: 'Article';
   body?: Maybe<Scalars['String']['output']>;
-  id?: Maybe<Scalars['Int']['output']>;
-  published?: Maybe<Scalars['Boolean']['output']>;
-  title?: Maybe<Scalars['String']['output']>;
+  id: Scalars['Int']['output'];
+  published: Scalars['Boolean']['output'];
+  title: Scalars['String']['output'];
 };
 
 export type Mutation = {
@@ -54,24 +54,24 @@ export type CreateDraftMutationVariables = Exact<{
 }>;
 
 
-export type CreateDraftMutation = { __typename?: 'Mutation', createDraft: { __typename?: 'Article', id?: number | null, title?: string | null, body?: string | null, published?: boolean | null } };
+export type CreateDraftMutation = { __typename?: 'Mutation', createDraft: { __typename?: 'Article', id: number, title: string, body?: string | null, published: boolean } };
 
 export type PublishMutationVariables = Exact<{
   draftId: Scalars['Int']['input'];
 }>;
 
 
-export type PublishMutation = { __typename?: 'Mutation', publish?: { __typename?: 'Article', id?: number | null, title?: string | null, body?: string | null, published?: boolean | null } | null };
+export type PublishMutation = { __typename?: 'Mutation', publish?: { __typename?: 'Article', id: number, title: string, body?: string | null, published: boolean } | null };
 
 export type DraftArticlesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type DraftArticlesQuery = { __typename?: 'Query', draftArticles: Array<{ __typename?: 'Article', id?: number | null, title?: string | null, body?: string | null, published?: boolean | null } | null> };
+export type DraftArticlesQuery = { __typename?: 'Query', draftArticles: Array<{ __typename?: 'Article', id: number, title: string, body?: string | null, published: boolean } | null> };
 
 export type PublishedArticlesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type PublishedArticlesQuery = { __typename?: 'Query', publishedArticles?: Array<{ __typename?: 'Article', id?: number | null, title?: string | null, body?: string | null, published?: boolean | null } | null> | null };
+export type PublishedArticlesQuery = { __typename?: 'Query', publishedArticles?: Array<{ __typename?: 'Article', id: number, title: string, body?: string | null, published: boolean } | null> | null };
 
 
 export const CreateDraftDocument = gql`

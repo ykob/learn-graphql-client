@@ -4,9 +4,9 @@
 
 type Article {
   body: String
-  id: Int
-  published: Boolean
-  title: String
+  id: Int!
+  published: Boolean!
+  title: String!
 }
 
 type Mutation {
